@@ -1,0 +1,13 @@
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\bin\Debug\netcoreapp3.1\DiscountCart.exe
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\bin\Debug\netcoreapp3.1\DiscountCart.deps.json
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\bin\Debug\netcoreapp3.1\DiscountCart.runtimeconfig.json
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\bin\Debug\netcoreapp3.1\DiscountCart.runtimeconfig.dev.json
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\bin\Debug\netcoreapp3.1\DiscountCart.dll
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\bin\Debug\netcoreapp3.1\DiscountCart.pdb
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\obj\Debug\netcoreapp3.1\DiscountCart.csprojAssemblyReference.cache
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\obj\Debug\netcoreapp3.1\DiscountCart.csproj.CoreCompileInputs.cache
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\obj\Debug\netcoreapp3.1\DiscountCart.AssemblyInfoInputs.cache
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\obj\Debug\netcoreapp3.1\DiscountCart.AssemblyInfo.cs
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\obj\Debug\netcoreapp3.1\DiscountCart.dll
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\obj\Debug\netcoreapp3.1\DiscountCart.pdb
+C:\Users\rinuj\source\repos\DiscountCart\DiscountCart\obj\Debug\netcoreapp3.1\DiscountCart.genruntimeconfig.cache
