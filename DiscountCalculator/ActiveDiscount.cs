@@ -28,22 +28,31 @@ namespace DiscountCart.DiscountCalculator
 
         public override int GetDiscountOnB(int quanDis, int price, int quantity)
         {
-            throw new NotImplementedException();
+            prodType = new ProductB();
+            discountedPrice = (quantity / quanDis) * price + (quantity % quanDis) * prodType.getPrice();
+            return discountedPrice;
         }
 
         public override int GetDiscountOnC(int quanDis, int price, int quantity)
         {
-            throw new NotImplementedException();
+            prodType = new ProductC();
+            discountedPrice = (quantity / quanDis) * price + (quantity % quanDis) * prodType.getPrice();
+            return discountedPrice;
         }
 
         public override int GetDiscountOnCD(int quanDis, int price, int quantity)
         {
-            throw new NotImplementedException();
+            IProductType prodTypeC = new ProductC();
+            IProductType prodTypeD = new ProductD();
+            discountedPrice = (quantity / quanDis) * price + GetDiscountOnC(1, prodTypeC.getPrice(), quantity % quanDis) + GetDiscountOnD(1, prodTypeC.getPrice(), quantity % quanDis);
+            return discountedPrice;
         }
 
         public override int GetDiscountOnD(int quanDis, int price, int quantity)
         {
-            throw new NotImplementedException();
+            prodType = new ProductD();
+            discountedPrice = (quantity / quanDis) * price + (quantity % quanDis) * prodType.getPrice();
+            return discountedPrice;
         }
     }
 }

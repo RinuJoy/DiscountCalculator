@@ -11,7 +11,7 @@ namespace DiscountCart.DiscountCalculator
         private Dictionary<string, int> activeDiscount;
         private Dictionary<string, int> productInfo;
 
-        public DiscountCalculator(Dictionary<string, int> _activeDiscount, Dictionary<string, int> _productInfo)
+        public DiscountCalculator( Dictionary<string, int> _productInfo, Dictionary<string, int> _activeDiscount)
         {
             productInfo = _productInfo;
             activeDiscount = _activeDiscount;
@@ -31,8 +31,7 @@ namespace DiscountCart.DiscountCalculator
                             if(dis.Key.Contains("A"))
                             {
                                 char[] keyValue = dis.Key.ToCharArray();
-                                amount = GetDiscountOnA(keyValue[0],dis.Value,item.Value);
-                                return amount;
+                                amount = amount + GetDiscountOnA(keyValue[0],dis.Value,item.Value);
                             }
                         }
                        
@@ -43,8 +42,7 @@ namespace DiscountCart.DiscountCalculator
                             if (dis.Key.Contains("B"))
                             {
                                 char[] keyValue = dis.Key.ToCharArray();
-                                amount = GetDiscountOnB(keyValue[0], dis.Value, item.Value);
-                                return amount;
+                                amount = amount + GetDiscountOnB(keyValue[0], dis.Value, item.Value);
                             }
                         }
                         break;
@@ -54,8 +52,7 @@ namespace DiscountCart.DiscountCalculator
                             if (dis.Key.Contains("C"))
                             {
                                 char[] keyValue = dis.Key.ToCharArray();
-                                amount = GetDiscountOnC(keyValue[0], dis.Value, item.Value);
-                                return amount;
+                                amount = amount + GetDiscountOnC(keyValue[0], dis.Value, item.Value);
                             }
                         }
                         break;
@@ -65,8 +62,7 @@ namespace DiscountCart.DiscountCalculator
                             if (dis.Key.Contains("D"))
                             {
                                 char[] keyValue = dis.Key.ToCharArray();
-                                amount = GetDiscountOnD(keyValue[0], dis.Value, item.Value);
-                                return amount;
+                                amount = amount + GetDiscountOnD(keyValue[0], dis.Value, item.Value);
                             }
                         }
                         break;
@@ -76,8 +72,7 @@ namespace DiscountCart.DiscountCalculator
                             if (dis.Key.Contains("CD"))
                             {
                                 char[] keyValue = dis.Key.ToCharArray();
-                                amount = GetDiscountOnCD(keyValue[0], dis.Value, item.Value);
-                                return amount;
+                                amount = amount + GetDiscountOnCD(keyValue[0], dis.Value, item.Value);                                
                             }
                         }
                         break;
